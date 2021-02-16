@@ -8,7 +8,19 @@ const getLogin = () =>{
 
 //  depositHandler...
 const addDeposit = ()=>{
-    const depositNumber = getInputs('deposit-input')
+    const depositNumber = getInputs('deposit-input') ;
+    if (depositNumber < 0) {
+        alert('Deposit value not negative')
+    }
+    else{
+        
+        getUpdateSpan(depositNumber ,'current-deposit');
+        getUpdateSpan(depositNumber ,'current-Balance')  ;
+        document.getElementById('deposit-input').value = ''
+    }
+}
+
+// commoncode...... 
 
 //    const depositAmount = document.getElementById('deposit-input').value ;
 //    const depositNumber = parseFloat(depositAmount) ;
@@ -16,14 +28,8 @@ const addDeposit = ()=>{
 //    const currentDeposit = document.getElementById('current-deposit').innerText ;
 //    const currentDepositNumber = parseFloat(currentDeposit) ;
 //    const totalDeposit =  depositNumber + currentDepositNumber ;   
-//    document.getElementById('current-deposit').innerText= totalDeposit ;  
-   document.getElementById('deposit-input').value = '' ;
+//    document.getElementById('current-deposit').innerText= totalDeposit ;     
 
-   getUpdateSpan(depositNumber ,'current-deposit')
-   getUpdateSpan(depositNumber ,'current-Balance')
-   
-   
-}
 // updatedd
 const getUpdateSpan = (depositNumber , id) => {
     const currentBalance = document.getElementById(id).innerText ;
