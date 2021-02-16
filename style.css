@@ -1,0 +1,44 @@
+
+body{
+    padding: 100px;
+}
+
+.header{
+    color:goldenrod;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#text-color{
+    font-size: 50px;
+    color: tomato;
+}
+
+#login-color{
+    color: cornflowerblue;
+}
+
+#transction-Area{
+    display: none;
+}
+.space-beetwon{
+margin: 0 20px ;
+color: white;
+text-align: center;
+border-radius: 10px;
+}
+ #Deposit{
+    background-color:blueviolet;
+ }
+
+ #Withdraw{
+     background-color:lightsalmon;
+ }
+
+ #Balance{
+     background-color:orange;
+ }
+.text-color{
+    color: cornflowerblue;
+    font-weight: 500;
+}

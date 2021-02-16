@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,75 @@
     <!-- style cssLink -->
     <link rel="stylesheet" href="style.css">
     <!-- bootstrap CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
+
 <body>
-   
+    <section>
+        <div id="login-area">
+            <h1 class="header text-center"> Welcome To <span id="text-color">My-Bank</span></h1>
+            <div class="submit-area shadow mt-3 p-5 rounded">
+                <h3 id="login-color">Login</h3>
+                <input id="email-input" class="form-control mt-3" type="email" name="" placeholder="Email">
+                <input id="pass-input" class="form-control mt-2" type="password" name="" placeholder="Password">
+                <button id="submit" onclick="getLogin()" class="btn btn-success mt-3"> Login </button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+    <div id="transction-Area">
+        <div class="row space">
+            <div  class="col-md-4">
+                <div id="Deposit" class="space-beetwon p-4 ">
+                    <h5> Deposit</h5>
+                    <h2>$00</h2>
+                </div>
+            </div>
+           <div class="col-md-4">
+                <div id="Withdraw"  class="space-beetwon p-4  ">
+                    <h5>Withdraw</h5>
+                    <h2>$00</h2>
+                </div>
+            </div>
+            <div  class="col-md-4">
+                <div id="Balance" class="space-beetwon p-4 ">
+                    <h5>Balance</h5>
+                    <h2>$1200</h2>
+                </div>
+            </div>
+        </div>
+
+        
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="shadow-lg mt-5 p-5 rounded">
+                        <h4 class="text-color">Deposit</h4>
+                    <input class="form-control mt-3" type="text" name="" placeholder=" $ amount you went to Deposit">
+                    <button class="btn btn-success mt-3">Deposit</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="shadow-lg mt-5 p-5 rounded">
+                        <h4 class="text-color">Withdraw</h4>
+                    <input class="form-control mt-3" type="text" name="" placeholder=" $ amount you went to withdraw">
+                    <button class="btn btn-success mt-3">Withdraw</button>
+                    </div>
+                </div>
+            </div>
     
+         
+
+    </div>
+
+   
+  </section>
+  
+      
+ 
+
     <script src="app.js"></script>
 </body>
+
 </html>
