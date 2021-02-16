@@ -31,19 +31,19 @@
             <div  class="col-md-4">
                 <div id="Deposit" class="space-beetwon p-4 ">
                     <h5> Deposit</h5>
-                    <h2>$00</h2>
+                    <h2>$ <span id="current-deposit"> 00 </span></h2>
                 </div>
             </div>
            <div class="col-md-4">
                 <div id="Withdraw"  class="space-beetwon p-4  ">
                     <h5>Withdraw</h5>
-                    <h2>$00</h2>
+                    <h2>$ <span id="current-withdraw">00</span></h2>
                 </div>
             </div>
             <div  class="col-md-4">
                 <div id="Balance" class="space-beetwon p-4 ">
                     <h5>Balance</h5>
-                    <h2>$1200</h2>
+                    <h2>$ <span id="current-Balance"> 1200 </span></h2>
                 </div>
             </div>
         </div>
@@ -53,15 +53,15 @@
                 <div class="col-md-6">
                     <div class="shadow-lg mt-5 p-5 rounded">
                         <h4 class="text-color">Deposit</h4>
-                    <input class="form-control mt-3" type="text" name="" placeholder=" $ amount you went to Deposit">
-                    <button class="btn btn-success mt-3">Deposit</button>
+                    <input id="deposit-input" class="form-control mt-3" type="text" name="" placeholder=" $ amount you went to Deposit">
+                    <button onclick="addDeposit()" class="btn btn-success mt-3">Deposit</button>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="shadow-lg mt-5 p-5 rounded">
                         <h4 class="text-color">Withdraw</h4>
-                    <input class="form-control mt-3" type="text" name="" placeholder=" $ amount you went to withdraw">
-                    <button class="btn btn-success mt-3">Withdraw</button>
+                    <input id="Withdraw-input" class="form-control mt-3" type="text" name="" placeholder=" $ amount you went to withdraw">
+                    <button onclick="getWithdraw()" class="btn btn-success mt-3">Withdraw</button>
                     </div>
                 </div>
             </div>
